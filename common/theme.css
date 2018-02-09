@@ -1,8 +1,8 @@
 :root {
   --color-primary: #31353b;
-  --color-primary-light: #b7b5b8;
-  --color-secondary: #bf8ec4;
-  --color-accent: #189e4b;
+  --color-primary-light: #efefef;
+  --color-accent: #427053;
+  --color-accent-light: #73bc8e;
   --font-primary: "Raleway", sans-serif;
 }
 
@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   font-family: var(--font-primary);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 a {
@@ -32,6 +32,6 @@ dd {
 
 q {
   font-family: var(--font-primary);
-  font weight: 300;
+  font-weight: 100;
   font-style: italic;
 }

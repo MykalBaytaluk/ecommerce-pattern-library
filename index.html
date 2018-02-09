@@ -10,8 +10,12 @@
     :root {
       --color-patternbot-interface: 0;
       --color-patternbot-interface-opposite: 255;
+        --font-patternbot-primary: "Raleway", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
 
+      html {
+        font-family: "Raleway", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
 
     body {
       background-color: #fff;
@@ -55,7 +59,7 @@
 
     <header class="masthead">
       <div class="masthead-inner">
-        <h1 class="tera gutter pad-t pad-b push-0" style="color: ;">
+        <h1 class="tera gutter pad-t pad-b push-0" style="color: #31353b;">
             Drawer Demons
             <span class="block normal mega pad-t-1-4">Pattern Library</span>
         </h1>
@@ -73,16 +77,6 @@
                 </div>
               </a>
             </li>
-              <li role="presentation">
-                <a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="typography" href="#typography">
-                  <div class="relative">
-                    <span>Typography</span>
-                    <i class="icon i-18 absolute pin-cr">
-                      <svg><use xlink:href="#icon-active" /></svg>
-                    </i>
-                  </div>
-                </a>
-              </li>
               <li role="presentation">
                 <a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="grid" href="#grid">
                   <div class="relative">
@@ -103,6 +97,26 @@
                   </div>
                 </a>
               </li>
+                <li role="presentation">
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="buttons" href="#buttons">
+                    <div class="relative">
+                      <span>Buttons</span>
+                      <i class="icon i-18 absolute pin-cr">
+                        <svg><use xlink:href="#icon-active" /></svg>
+                      </i>
+                    </div>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="typography" href="#typography">
+                    <div class="relative">
+                      <span>Typography</span>
+                      <i class="icon i-18 absolute pin-cr">
+                        <svg><use xlink:href="#icon-active" /></svg>
+                      </i>
+                    </div>
+                  </a>
+                </li>
             <li class="pad-t-1-2" role="presentation">
               <button class="nav-show-all gutter pad-t-1-4 pad-b-1-4 block kilo" id="nav-show-all" aria-pressed="false" title="Show all patterns" aria-label="Show all patterns">
                 <span class="nav-show-all-wrap relative block">Show all</span>
@@ -114,17 +128,27 @@
     </header>
 
     <main class="main">
-        <section class="pattern" id="brand" role="tabpanel" hidden aria-hidden="true" style="">
-  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
-    <h2 class="pattern-name exa push-1-4" style="color: ;">Brand</h2>
-        <ul class="list-group-inline gutter absolute pin-cr">
-        </ul>
+        <section class="pattern" id="brand" role="tabpanel" hidden aria-hidden="true" >
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
+    <h2 class="pattern-name exa push-1-4" style="color: #31353b;">Brand</h2>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4 pad-b-1-4">
+            <li><a href="#brand-logos">Logos</a></li>
+            <li><a href="#brand-colours">Colours</a></li>
+            <li><a href="#brand-typefaces">Typefaces</a></li>
+        </ol>
+      </nav>
   </div>
 
 
   
 
     <div class="pattern-details" id="brand-logos" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Logos</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+            </ul>
+        </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
         <div class="gutter pad-t-1-2 pad-b-1-2">
@@ -136,305 +160,35 @@
 
       </div>
     </div>
-
-</section>
-
-        <section class="pattern" id="typography" role="tabpanel" hidden aria-hidden="true" >
-  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
-    <h2 class="pattern-name exa push-1-4" style="color: ;">Typography</h2>
-      <nav class="pattern-nav">
-        <ol class="list-group-inline push-1-4 pad-b-1-4">
-            <li><a href="#typography-size-adjustments">Size adjustments</a></li>
-            <li><a href="#typography-vertical-spacing">Vertical spacing</a></li>
-            <li><a href="#typography-horizontal-spacing">Horizontal spacing</a></li>
-            <li><a href="#typography-font-sizes">Font sizes</a></li>
-            <li><a href="#typography-headings">Headings</a></li>
-            <li><a href="#typography-links">Links</a></li>
-            <li><a href="#typography-lists">Lists</a></li>
-            <li><a href="#typography-quotations">Quotations</a></li>
-            <li><a href="#typography-emphasis-and-edits">Emphasis and edits</a></li>
-        </ol>
-      </nav>
-  </div>
-
-    <div class="pattern-desc milli island" >
-      <div class="max-length"><p>The modular typography uses a system generated by <a href="https://typografier.web-dev.tools/#0,100,1.3,1.500,0;38,110,1.4,1.500,1;60,120,1.5,1.500,1;90,130,1.5,1.500,1">Typografier</a>. There are multiple sizes and spacing classes available—all based on the font-size and line-height to create a harmonious vertical rhythm. <a href="https://learn-the-web.algonquindesign.ca/topics/typografier-cheat-sheet/">See the documentation for all available classes.</a></p>
-</div>
-    </div>
-
-  
-
-    <div class="pattern-details" id="typography-size-adjustments" style="">
+    <div class="pattern-details" id="brand-colours" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Size adjustments</h3>
+          <h3 class="pattern-name tera push-1-8">Colours</h3>
             <ul class="list-group-inline gutter absolute pin-cr">
             </ul>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p><a href="https://typografier.web-dev.tools/#0,100,1.3,1.500,0;38,110,1.4,1.500,1;60,120,1.5,1.500,1;90,130,1.5,1.500,1">Typografier</a> generates font-sizes and line-heights for different screen widths that are more appropriate for the available space.</p>
-</div>
-          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
         <div class="gutter pad-t-1-2 pad-b-1-2">
           <div class="resizeable-pattern relative" style="">
             <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/00-size-adjustments.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+            <iframe data-src="patterns/brand/2-colours.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="pattern-details" id="typography-vertical-spacing" style="">
+    <div class="pattern-details" id="brand-typefaces" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Vertical spacing</h3>
+          <h3 class="pattern-name tera push-1-8">Typefaces</h3>
             <ul class="list-group-inline gutter absolute pin-cr">
             </ul>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The vertical spacing classes generated by <a href="https://typografier.web-dev.tools/#0,100,1.3,1.500,0;38,110,1.4,1.500,1;60,120,1.5,1.500,1;90,130,1.5,1.500,1">Typografier</a> provide a range of different sizes for both top &amp; bottom padding and bottom margins. These same sizes would be applied to the island classes.</p>
-</div>
-          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
         <div class="gutter pad-t-1-2 pad-b-1-2">
           <div class="resizeable-pattern relative" style="">
             <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/01-vertical-spacing.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-horizontal-spacing" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Horizontal spacing</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-            </ul>
-        </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The horizontal spacing classes generated by <a href="https://typografier.web-dev.tools/#0,100,1.3,1.500,0;38,110,1.4,1.500,1;60,120,1.5,1.500,1;90,130,1.5,1.500,1">Typografier</a> provide range of different sizes for left &amp; right padding. These same sizes would be applied to the island classes.</p>
-</div>
-          </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/02-horizontal-spacing.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-font-sizes" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Font sizes</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-            </ul>
-        </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>There are multiple font-sizes available based on a typographic scale. The font-sizes and line-heights increase as the screen gets wider to better use the available space.</p>
-</div>
-          </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/03-font-sizes.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-headings" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Headings</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/04-headings.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/04-headings.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-links" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Links</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/05-links.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/05-links.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-lists" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Lists</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/06-lists.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/06-lists.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-quotations" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Quotations</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/07-quotations.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/07-quotations.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="pattern-details" id="typography-emphasis-and-edits" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Emphasis and edits</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/08-emphasis-and-edits.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/typography/08-emphasis-and-edits.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
+            <iframe data-src="patterns/brand/3-typefaces.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
           </div>
         </div>
 
@@ -445,7 +199,7 @@
 
         <section class="pattern" id="grid" role="tabpanel" hidden aria-hidden="true" style="">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
-    <h2 class="pattern-name exa push-1-4" style="color: ;">Grid</h2>
+    <h2 class="pattern-name exa push-1-4" style="color: #31353b;">Grid</h2>
         <ul class="list-group-inline gutter absolute pin-cr">
         </ul>
   </div>
@@ -474,7 +228,7 @@
 
         <section class="pattern" id="modules" role="tabpanel" hidden aria-hidden="true" >
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
-    <h2 class="pattern-name exa push-1-4" style="color: ;">Modules</h2>
+    <h2 class="pattern-name exa push-1-4" style="color: #31353b;">Modules</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4 pad-b-1-4">
             <li><a href="#modules-list-group">List group</a></li>
@@ -554,6 +308,958 @@
           </div>
         </div>
 
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="buttons" role="tabpanel" hidden aria-hidden="true" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+    <h2 class="pattern-name exa push-1-4" style="color: #31353b;">Buttons</h2>
+        <ul class="list-group-inline gutter absolute pin-cr">
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="buttons-buttons-code-sample">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-code"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/buttons/buttons.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-pop-out"></use></svg>
+                </i>
+              </a>
+            </li>
+        </ul>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="buttons-buttons" style="">
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/buttons/buttons.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="buttons-buttons-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#buttons-buttons-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="buttons-buttons-code-sample-copy-chunk">&lt;a class="btn" href="#"&gt;Standard button&lt;/a>
+&lt;a class="btn btn-light" href="#">Light button&lt;/a>
+&lt;a class="btn btn-ghost" href="#">Ghost button&lt;/a>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="typography" role="tabpanel" hidden aria-hidden="true" >
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
+    <h2 class="pattern-name exa push-1-4" style="color: #31353b;">Typography</h2>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4 pad-b-1-4">
+            <li><a href="#typography-size-adjustments">Size adjustments</a></li>
+            <li><a href="#typography-vertical-spacing">Vertical spacing</a></li>
+            <li><a href="#typography-horizontal-spacing">Horizontal spacing</a></li>
+            <li><a href="#typography-font-sizes">Font sizes</a></li>
+            <li><a href="#typography-headings">Headings</a></li>
+            <li><a href="#typography-links">Links</a></li>
+            <li><a href="#typography-lists">Lists</a></li>
+            <li><a href="#typography-quotations">Quotations</a></li>
+            <li><a href="#typography-emphasis-and-edits">Emphasis and edits</a></li>
+        </ol>
+      </nav>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="typography-size-adjustments" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Size adjustments</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-size-adjustments-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/00-size-adjustments.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/00-size-adjustments.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-size-adjustments-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-size-adjustments-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-size-adjustments-code-sample-copy-chunk">&lt;div class="text-left"&gt;
+  &lt;div class="patternbot-mq-display-wrap push patternbot-font-primary patternbot-color-body">
+    &lt;ol class="patternbot-mq-display list-group push-0 pad-b" style="width:calc(0em + 40em);width:calc(38em + 40em);width:calc(60em + 40em);width:calc(90em + 40em);">
+      &lt;li style="padding-left:0em;">
+        &lt;div class="patternbot-mq-inner relative">
+          &lt;dl class="patternbot-mq-list list-group-inline push-0 gutter-1-2 absolute micro">
+            &lt;dt class="push-0">Media query&lt;/dt>
+            &lt;dd class="push-0">&#x221E;&lt;/dd>
+            &lt;dt class="push-0">Sizes&lt;/dt>
+            &lt;dd class="push-0">100% / 1.3rem&lt;/dd>
+            &lt;dt class="push-0">Type scale&lt;/dt>
+            &lt;dd class="push-0">1.5&lt;/dd>
+          &lt;/dl>
+        &lt;/div>
+      &lt;/li>
+      &lt;li style="padding-left:38em;">
+        &lt;div class="patternbot-mq-inner relative">
+          &lt;dl class="patternbot-mq-list list-group-inline push-0 gutter-1-2 absolute micro">
+            &lt;dt class="push-0">Media query&lt;/dt>
+            &lt;dd class="push-0">38em&lt;/dd>
+            &lt;dt class="push-0">Sizes&lt;/dt>
+            &lt;dd class="push-0">110% / 1.4rem&lt;/dd>
+            &lt;dt class="push-0">Type scale&lt;/dt>
+            &lt;dd class="push-0">1.5&lt;/dd>
+          &lt;/dl>
+        &lt;/div>
+      &lt;/li>
+      &lt;li style="padding-left:60em;">
+        &lt;div class="patternbot-mq-inner relative">
+          &lt;dl class="patternbot-mq-list list-group-inline push-0 gutter-1-2 absolute micro">
+            &lt;dt class="push-0">Media query&lt;/dt>
+            &lt;dd class="push-0">60em&lt;/dd>
+            &lt;dt class="push-0">Sizes&lt;/dt>
+            &lt;dd class="push-0">120% / 1.5rem&lt;/dd>
+            &lt;dt class="push-0">Type scale&lt;/dt>
+            &lt;dd class="push-0">1.5&lt;/dd>
+          &lt;/dl>
+        &lt;/div>
+      &lt;/li>
+      &lt;li style="padding-left:90em;">
+        &lt;div class="patternbot-mq-inner relative">
+          &lt;dl class="patternbot-mq-list list-group-inline push-0 gutter-1-2 absolute micro">
+            &lt;dt class="push-0">Media query&lt;/dt>
+            &lt;dd class="push-0">90em&lt;/dd>
+            &lt;dt class="push-0">Sizes&lt;/dt>
+            &lt;dd class="push-0">130% / 1.5rem&lt;/dd>
+            &lt;dt class="push-0">Type scale&lt;/dt>
+            &lt;dd class="push-0">1.5&lt;/dd>
+          &lt;/dl>
+        &lt;/div>
+      &lt;/li>
+    &lt;/ol>
+  &lt;/div>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-vertical-spacing" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Vertical spacing</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-vertical-spacing-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/01-vertical-spacing.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/01-vertical-spacing.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-vertical-spacing-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-vertical-spacing-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-vertical-spacing-code-sample-copy-chunk">&lt;div class="grid grid-bottom text-center"&gt;
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;div class="patternbot-pad-box pad-t-2">&lt;/div>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;div class="patternbot-pad-box pad-t">&lt;/div>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;div class="patternbot-pad-box pad-t-1-2">&lt;/div>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;div class="patternbot-pad-box pad-t-1-4">&lt;/div>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;div class="patternbot-pad-box pad-t-1-8">&lt;/div>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid text-center patternbot-font-primary patternbot-color-body patternbot-spacing-display">
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;h2 class="push-0">2&lt;/h2>
+    &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+      &lt;li>&lt;code>.push-2&lt;/code>&lt;/li>
+      &lt;li>&lt;code>.pad-2&lt;/code>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;h2 class="push-0">1&lt;/h2>
+    &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+      &lt;li>&lt;code>.push&lt;/code>&lt;/li>
+      &lt;li>&lt;code>.pad&lt;/code>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;h2 class="push-0">&#xBD;&lt;/h2>
+    &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+      &lt;li>&lt;code>.push-1-2&lt;/code>&lt;/li>
+      &lt;li>&lt;code>.pad-1-2&lt;/code>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;h2 class="push-0">&#xBC;&lt;/h2>
+    &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+      &lt;li>&lt;code>.push-1-4&lt;/code>&lt;/li>
+      &lt;li>&lt;code>.pad-1-4&lt;/code>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="unit [ xs-1-5 ]">
+    &lt;h2 class="push-0">&#x215B;&lt;/h2>
+    &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+      &lt;li>&lt;code>.push-1-8&lt;/code>&lt;/li>
+      &lt;li>&lt;code>.pad-1-8&lt;/code>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-horizontal-spacing" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Horizontal spacing</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-horizontal-spacing-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/02-horizontal-spacing.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/02-horizontal-spacing.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-horizontal-spacing-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-horizontal-spacing-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-horizontal-spacing-code-sample-copy-chunk">&lt;div class="text-center patternbot-font-primary patternbot-color-body patternbot-spacing-display"&gt;
+  &lt;div class="patternbot-pad-box gutter-2">
+    &lt;div class="patternbot-pad-box-inner">
+      &lt;h2 class="push-0">2&lt;/h2>
+      &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+        &lt;li>&lt;code>.gutter-2&lt;/code>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="patternbot-pad-box gutter">
+    &lt;div class="patternbot-pad-box-inner">
+      &lt;h2 class="push-0">1&lt;/h2>
+      &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+        &lt;li>&lt;code>.gutter&lt;/code>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="patternbot-pad-box gutter-1-2">
+    &lt;div class="patternbot-pad-box-inner">
+      &lt;h2 class="push-0">&#xBD;&lt;/h2>
+      &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+        &lt;li>&lt;code>.gutter-1-2&lt;/code>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="patternbot-pad-box gutter-1-4">
+    &lt;div class="patternbot-pad-box-inner">
+      &lt;h2 class="push-0">&#xBC;&lt;/h2>
+      &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+        &lt;li>&lt;code>.gutter-1-4&lt;/code>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="patternbot-pad-box gutter-1-8">
+    &lt;div class="patternbot-pad-box-inner">
+      &lt;h2 class="push-0">&#x215B;&lt;/h2>
+      &lt;ul class="patternbot-code-details patternbot-code-details-under patternbot-code-details-center list-group-inline micro push-0">
+        &lt;li>&lt;code>.gutter-1-8&lt;/code>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-font-sizes" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Font sizes</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-font-sizes-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/03-font-sizes.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/03-font-sizes.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-font-sizes-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-font-sizes-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-font-sizes-code-sample-copy-chunk">&lt;div class="text-left"&gt;
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.tenamega&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="tenamega text-left patternbot-no-wrap">Extreme large size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.tenakilo&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="tenakilo text-left patternbot-no-wrap">Super text size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.tena&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="tena text-left patternbot-no-wrap">XXXL text size size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.nina&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="nina text-left patternbot-no-wrap">XXL text size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.yotta&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="yotta text-left patternbot-no-wrap">Extra large size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.zetta&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="zetta text-left patternbot-no-wrap">Large size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.exa&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h1&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="exa text-left patternbot-no-wrap">Heading level 1 size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.peta&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h2&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="peta text-left patternbot-no-wrap">Heading level 2 size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.tera&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h3&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="tera text-left patternbot-no-wrap">Heading level 3 size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.giga&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h4&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="giga text-left patternbot-no-wrap">Heading level 4 size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.mega&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h5&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="mega text-left patternbot-no-wrap">Heading level 5 size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.kilo&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;h6&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;p&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code class="patternbot-code-invisible">default&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="patternbot-no-wrap">Default body size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.milli&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;small&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="milli text-left patternbot-no-wrap">Second smallest size&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>.micro&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="micro text-left patternbot-no-wrap">Smallest size&lt;/p>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-headings" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Headings</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-headings-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/04-headings.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/04-headings.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-headings-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-headings-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-headings-code-sample-copy-chunk">&lt;div class="text-left"&gt;
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h1&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h1 class="text-left">Heading level 1&lt;/h1>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h2&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h2 class="text-left">Heading level 2&lt;/h2>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h3&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h3 class="text-left">Heading level 3&lt;/h3>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h4&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h4 class="text-left">Heading level 4&lt;/h4>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h5&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h5 class="text-left">Heading level 5&lt;/h5>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;h6&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;h6 class="text-left">Heading level 6&lt;/h6>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-links" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Links</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-links-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/05-links.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/05-links.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-links-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-links-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-links-code-sample-copy-chunk">&lt;div class="text-left"&gt;
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;a&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;ul class="list-group text-left">
+    &lt;li class="tera">&lt;a href="#">Link&lt;/a>&lt;/li>
+    &lt;li class="bold">&lt;a href="#">Link&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+    &lt;li class="milli">&lt;a href="#">Link&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-lists" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Lists</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-lists-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/06-lists.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/06-lists.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-lists-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-lists-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-lists-code-sample-copy-chunk">&lt;div class="gutter text-left"&gt;
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;ul&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;li&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;ul class="text-left">
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+  &lt;/ul>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;ol&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;li&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;ol class="text-left">
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 1&lt;/li>
+  &lt;/ol>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;dl&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;dt&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;dd&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;dl class="text-left">
+    &lt;dt>List item 1&lt;/dt>
+    &lt;dd>List item 1&lt;/dd>
+    &lt;dt>List item 1&lt;/dt>
+    &lt;dd>List item 1&lt;/dd>
+  &lt;/dl>
+
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-quotations" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Quotations</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-quotations-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/07-quotations.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/07-quotations.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-quotations-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-quotations-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-quotations-code-sample-copy-chunk">&lt;div class="gutter text-left"&gt;
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;blockquote&gt;&lt;/code>&lt;/li>
+    &lt;li>&lt;code>&lt;cite&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;blockquote>
+    &lt;p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p>
+    &lt;footer>&#x2014; &lt;cite>Citing a person&lt;/cite>&lt;/footer>
+  &lt;/blockquote>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;q&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p>This is a paragraph with &lt;q>An amazing quote&lt;/q> inside&lt;/p>
+
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="typography-emphasis-and-edits" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Emphasis and edits</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="typography-emphasis-and-edits-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/typography/08-emphasis-and-edits.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-48 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/typography/08-emphasis-and-edits.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="typography-emphasis-and-edits-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#typography-emphasis-and-edits-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="typography-emphasis-and-edits-code-sample-copy-chunk">&lt;div class="text-left"&gt;
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;em&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;em>This is text&lt;/em>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;strong&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;strong>This is text&lt;/strong>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;del&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;del>This is text&lt;/del>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;ins&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;ins>This is text&lt;/ins>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;abbr&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;abbr>THIS&lt;/abbr>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;dfn&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;dfn>This is text&lt;/dfn>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;i&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;i>This is text&lt;/i>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;b&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;b>This is text&lt;/b>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;mark&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;mark>This is text&lt;/mark>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;s&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;s>This is text&lt;/s>&lt;/p>
+
+  &lt;ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    &lt;li>&lt;code>&lt;u&gt;&lt;/code>&lt;/li>
+  &lt;/ul>
+  &lt;p class="text-left">&lt;u>This is text&lt;/u>&lt;/p>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
       </div>
     </div>
 
