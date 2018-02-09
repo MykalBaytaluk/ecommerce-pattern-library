@@ -1,11 +1,37 @@
 :root {
-  --color-primary: #6b6a69;
-  --color-primary-light: #fff1ee;
-  --color-secondary: #b8b3b2;
-  --color-accent: #186b51;
+  --color-primary: #31353b;
+  --color-primary-light: #b7b5b8;
+  --color-secondary: #bf8ec4;
+  --color-accent: #189e4b;
   --font-primary: "Raleway", sans-serif;
 }
 
 html {
   font-family: var(--font-primary);
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-weight: 900;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+a {
+  font-family: var(--font-primary);
+  font-weight: 100;
+}
+
+dd {
+  font-family: var(--font-primary);
+  font-weight: 900;
+}
+
+q {
+  font-family: var(--font-primary);
+  font weight: 300;
+  font-style: italic;
 }
