@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library
- * @version 4bdea958025ffcc33bd059d8afa0c9f8cd90d491
+ * @version 9cdbc4ea4c4f766e0d99e570b6845beb15145e6e
  */
-const patternManifest_4bdea958025ffcc33bd059d8afa0c9f8cd90d491 = {
+const patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -636,7 +636,23 @@ const patternManifest_4bdea958025ffcc33bd059d8afa0c9f8cd90d491 = {
       "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/header",
       "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/navigation"
     ],
-    "pages": [],
+    "pages": [
+      {
+        "name": "checkout.html",
+        "namePretty": "Checkout",
+        "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/pages/checkout.html"
+      },
+      {
+        "name": "home.html",
+        "namePretty": "Home",
+        "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/pages/home.html"
+      },
+      {
+        "name": "products.html",
+        "namePretty": "Products",
+        "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/pages/products.html"
+      }
+    ],
     "js": []
   },
   "userPatterns": [
@@ -868,5 +884,5 @@ const patternManifest_4bdea958025ffcc33bd059d8afa0c9f8cd90d491 = {
   }
 };
 
-patternBotIncludes(patternManifest_4bdea958025ffcc33bd059d8afa0c9f8cd90d491);
+patternBotIncludes(patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e);
 }());
