@@ -798,35 +798,19 @@
 
 </section>
 
-        <section class="pattern" id="buttons" role="tabpanel" hidden aria-hidden="true" style="">
-  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+        <section class="pattern" id="buttons" role="tabpanel" hidden aria-hidden="true" >
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" >
     <h2 class="pattern-name exa push-1-4" style="color: #31353b; font-family: ;">Buttons</h2>
-        <ul class="list-group-inline gutter absolute pin-cr">
-            <li>
-              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="buttons-buttons-code-sample">
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-code"></use></svg>
-                </i>
-              </button>
-            </li>
-            <li>
-              <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="buttons/buttons" hidden>
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-copy"></use></svg>
-                </i>
-              </button>
-            </li>
-            <li>
-              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/buttons/buttons.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-pop-out"></use></svg>
-                </i>
-              </a>
-            </li>
-        </ul>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4 pad-b-1-4">
+            <li><a href="#buttons--button-ghost">Button ghost</a></li>
+            <li><a href="#buttons--button-light">Button light</a></li>
+            <li><a href="#buttons--button">Button</a></li>
+        </ol>
+      </nav>
   </div>
 
-    <div class="pattern-desc milli island" style="">
+    <div class="pattern-desc milli island" >
       <div class="max-length"><p>The buttons use a variation of the primary color as well as the accent color. The primary color will be used for monetary transactions and the accent colors are there while were getting to know each other, essentially for while we are clicking through the website; leading up to a check out page:</p>
 <ul>
 <li>The ghost buttons are for linking to pages</li>
@@ -839,13 +823,39 @@
 
   
 
-    <div class="pattern-details " id="buttons--buttons" style="">
+    <div class="pattern-details " id="buttons--button-ghost" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Button ghost</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="buttons-button-ghost-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="buttons/button-ghost" hidden>
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-copy"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/buttons/button-ghost.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2">
           <div class="resizeable-pattern relative" style="">
             <i class="icon i-32 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
-            <iframe data-src="patterns/buttons/buttons.html" scrolling="no" data-inject-css=" " ></iframe>
+            <iframe data-src="patterns/buttons/button-ghost.html" scrolling="no" data-inject-css=" " ></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -861,16 +871,136 @@
           </div>
         </div>
 
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="buttons-buttons-code-sample" tabindex="-1">
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="buttons-button-ghost-code-sample" tabindex="-1">
             <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#buttons-buttons-code-sample-copy-chunk" hidden>
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#buttons-button-ghost-code-sample-copy-chunk" hidden>
                 <i class="icon i-18">
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="buttons-buttons-code-sample-copy-chunk">&lt;a class="btn" href="#"&gt;Standard button&lt;/a>
-&lt;a class="btn btn-light" href="#">Light button&lt;/a>
-&lt;a class="btn btn-ghost" href="#">Ghost button&lt;/a>
+              <code><pre id="buttons-button-ghost-code-sample-copy-chunk">&lt;a class="btn btn-ghost" href="#"&gt;Ghost button&lt;/a>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details " id="buttons--button-light" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Button light</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="buttons-button-light-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="buttons/button-light" hidden>
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-copy"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/buttons/button-light.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-32 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/buttons/button-light.html" scrolling="no" data-inject-css=" " ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="buttons-button-light-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#buttons-button-light-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="buttons-button-light-code-sample-copy-chunk">&lt;a class="btn btn-light" href="#"&gt;Light button&lt;/a>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details " id="buttons--button" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Button</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="buttons-button-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-include-btn" title="Copy include" aria-label="Copy include" data-copy-include-pattern="buttons/button" hidden>
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-copy"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/buttons/button.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <i class="icon i-32 patternbot-iframe-loading-gears absolute pin-c"><svg><use xlink:href="#patternbot-iframe-loading-gears"></use></svg></i>
+            <iframe data-src="patterns/buttons/button.html" scrolling="no" data-inject-css=" " ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="buttons-button-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#buttons-button-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="buttons-button-code-sample-copy-chunk">&lt;a class="btn" href="#"&gt;Standard button&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -1126,91 +1256,95 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="fields-fields-code-sample-copy-chunk">&lt;h5 class="push-0 island-2"&gt;Billing Information&lt;/h5>
+              <code><pre id="fields-fields-code-sample-copy-chunk">&lt;div class="checkout-form island"&gt;
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="name">Name &lt;br>&lt;small>(as printed on the card)&lt;/small>&lt;br>&lt;/label>
-  &lt;input class="input" id="name" placeholder="Firstname Lastname" name="name" required>
-&lt;/div>
+  &lt;h5 class="push-0 island-2">Billing Information&lt;/h5>
 
-&lt;div class="xs-1 island-2">
-  &lt;input id="visa" type="radio" name="valid">
-  &lt;label for="visa">Visa&lt;/label>
-  &lt;input id="mastercard" type="radio" name="valid">
-  &lt;label for="mastercard">Master Card&lt;/label>
-  &lt;input id="amex" type="radio" name="valid">
-  &lt;label for="amex">Amex&lt;/label>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="name">Name &lt;br>&lt;small>(as printed on the card)&lt;/small>&lt;br>&lt;/label>
+    &lt;input class="input" id="name" placeholder="Firstname Lastname" name="name" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="card">Card Number&lt;/label>
-  &lt;input class="input" id="card" placeholder="1234-5678-1234-5678" name="card" required>
-&lt;/div>
+  &lt;div class="xs-1 island-2">
+    &lt;input id="visa" type="radio" name="valid">
+    &lt;label for="visa">Visa&lt;/label>
+    &lt;input id="mastercard" type="radio" name="valid">
+    &lt;label for="mastercard">Master Card&lt;/label>
+    &lt;input id="amex" type="radio" name="valid">
+    &lt;label for="amex">Amex&lt;/label>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="exp">Expiry Date&lt;/label>
-  &lt;input class="input" id="exp" placeholder="06/21" name="exp" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="card">Card Number&lt;/label>
+    &lt;input class="input" id="card" placeholder="1234-5678-1234-5678" name="card" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="security">Security Number &lt;br>&lt;small>(The 3 digits on the back of the card)&lt;/small>&lt;br>&lt;/label>
-  &lt;input class="input" id="security" placeholder="123" name="security" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="exp">Expiry Date&lt;/label>
+    &lt;input class="input" id="exp" placeholder="06/21" name="exp" required>
+  &lt;/div>
 
-&lt;h5 class="push-0 island-2">Shipping Information&lt;/h5>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="security">Security Number &lt;br>&lt;small>(The 3 digits on the back of the card)&lt;/small>&lt;br>&lt;/label>
+    &lt;input class="input" id="security" placeholder="123" name="security" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="name-2">Name&lt;/label>
-  &lt;input class="input" id="name-2" placeholder="Firstname Lastname" name="name-2" required>
-&lt;/div>
+  &lt;h5 class="push-0 island-2">Shipping Information&lt;/h5>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="address">Address&lt;/label>
-  &lt;input class="input" id="address" placeholder="123 Adress Ave." name="address" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="name-2">Name&lt;/label>
+    &lt;input class="input" id="name-2" placeholder="Firstname Lastname" name="name-2" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="province">Province&lt;/label>
-  &lt;select class="input" id="province" placeholder="The province your city is in" name="province" required>
-    &lt;option value="">Select a province&lt;/option>
-    &lt;option>Alberta&lt;/option>
-    &lt;option>British Columbia&lt;/option>
-    &lt;option>Manitoba&lt;/option>
-    &lt;option>New Brunswick&lt;/option>
-    &lt;option>Newfoundland &amp; Labrador&lt;/option>
-    &lt;option>Northwest Territories&lt;/option>
-    &lt;option>Nova Scotia&lt;/option>
-    &lt;option>Nunavut&lt;/option>
-    &lt;option>Ontario&lt;/option>
-    &lt;option>Prince Edward Island&lt;/option>
-    &lt;option>Qu&#xE9;bec&lt;/option>
-    &lt;option>Saskatchewan&lt;/option>
-    &lt;option>Yukon&lt;/option>
-  &lt;/select>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="address">Address&lt;/label>
+    &lt;input class="input" id="address" placeholder="123 Adress Ave." name="address" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="city">City&lt;/label>
-  &lt;input class="input" id="city" placeholder="The city you live in" name="city" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="province">Province&lt;/label>
+    &lt;select class="input" id="province" placeholder="The province your city is in" name="province" required>
+      &lt;option value="">Select a province&lt;/option>
+      &lt;option>Alberta&lt;/option>
+      &lt;option>British Columbia&lt;/option>
+      &lt;option>Manitoba&lt;/option>
+      &lt;option>New Brunswick&lt;/option>
+      &lt;option>Newfoundland &amp; Labrador&lt;/option>
+      &lt;option>Northwest Territories&lt;/option>
+      &lt;option>Nova Scotia&lt;/option>
+      &lt;option>Nunavut&lt;/option>
+      &lt;option>Ontario&lt;/option>
+      &lt;option>Prince Edward Island&lt;/option>
+      &lt;option>Qu&#xE9;bec&lt;/option>
+      &lt;option>Saskatchewan&lt;/option>
+      &lt;option>Yukon&lt;/option>
+    &lt;/select>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label class="push-1-8" for="postal-code">Postal Code&lt;/label>
-  &lt;input class="input" id="postal-code" placeholder="You get the idea" name="postal-code" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="city">City&lt;/label>
+    &lt;input class="input" id="city" placeholder="The city you live in" name="city" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label for="email">Email&lt;/label>
-  &lt;input class="input" type="email" id="email" aria-describedby="email-error" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label class="push-1-8" for="postal-code">Postal Code&lt;/label>
+    &lt;input class="input" id="postal-code" placeholder="You get the idea" name="postal-code" required>
+  &lt;/div>
 
-&lt;div class="xs-1 m-1-2 l-1-4 island">
-  &lt;label for="phone">Main Phone&lt;/label>
-  &lt;input class="input" type="phone" id="phone" aria-describedby="phone-number-error" required>
-&lt;/div>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label for="email">Email&lt;/label>
+    &lt;input class="input" type="email" id="email" aria-describedby="email-error" required>
+  &lt;/div>
 
-&lt;div class="island">
-  &lt;button class="btn-ghost inline-block" type="submit">Place Order&lt;/button>
+  &lt;div class="xs-1 m-1-2 l-1-4 island">
+    &lt;label for="phone">Main Phone&lt;/label>
+    &lt;input class="input" type="phone" id="phone" aria-describedby="phone-number-error" required>
+  &lt;/div>
+
+  &lt;div class="island">
+    &lt;button class="btn inline-block" type="submit">Place Order&lt;/button>
+  &lt;/div>
+
 &lt;/div>
 </pre></code>
             </div>

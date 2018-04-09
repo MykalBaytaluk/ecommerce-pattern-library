@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library
- * @version 9cdbc4ea4c4f766e0d99e570b6845beb15145e6e
+ * @version 1fe1e2f91eab2d21bef848a1b939d7b08cfdee79
  */
-const patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e = {
+const patternManifest_1fe1e2f91eab2d21bef848a1b939d7b08cfdee79 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -662,11 +662,25 @@ const patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e = {
       "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/buttons",
       "html": [
         {
-          "name": "buttons",
-          "namePretty": "Buttons",
-          "filename": "buttons",
-          "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/buttons/buttons.html",
-          "localPath": "patterns/buttons/buttons.html"
+          "name": "button-ghost",
+          "namePretty": "Button ghost",
+          "filename": "button-ghost",
+          "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/buttons/button-ghost.html",
+          "localPath": "patterns/buttons/button-ghost.html"
+        },
+        {
+          "name": "button-light",
+          "namePretty": "Button light",
+          "filename": "button-light",
+          "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/buttons/button-light.html",
+          "localPath": "patterns/buttons/button-light.html"
+        },
+        {
+          "name": "button",
+          "namePretty": "Button",
+          "filename": "button",
+          "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/buttons/button.html",
+          "localPath": "patterns/buttons/button.html"
         }
       ],
       "md": [
@@ -884,5 +898,5 @@ const patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e = {
   }
 };
 
-patternBotIncludes(patternManifest_9cdbc4ea4c4f766e0d99e570b6845beb15145e6e);
+patternBotIncludes(patternManifest_1fe1e2f91eab2d21bef848a1b939d7b08cfdee79);
 }());
