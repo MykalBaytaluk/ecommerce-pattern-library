@@ -388,9 +388,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal
- * @version 1523279809630
+ * @version 1523279940044
  */
-const patternManifest_1523279809630 = {
+const patternManifest_1523279940044 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -610,10 +610,22 @@ const patternManifest_1523279809630 = {
       "path": "/Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal/patterns/buttons",
       "html": [
         {
-          "name": "buttons",
-          "namePretty": "Buttons",
-          "path": "/Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal/patterns/buttons/buttons.html",
-          "localPath": "patterns/buttons/buttons.html"
+          "name": "button-ghost",
+          "namePretty": "Button ghost",
+          "path": "/Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal/patterns/buttons/button-ghost.html",
+          "localPath": "patterns/buttons/button-ghost.html"
+        },
+        {
+          "name": "button-light",
+          "namePretty": "Button light",
+          "path": "/Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal/patterns/buttons/button-light.html",
+          "localPath": "patterns/buttons/button-light.html"
+        },
+        {
+          "name": "button",
+          "namePretty": "Button",
+          "path": "/Users/Glenis/OneDrive - Algonquin College/Semester 4/Web Dev 4/ecommerce-pattern-library-mykal/patterns/buttons/button.html",
+          "localPath": "patterns/buttons/button.html"
         }
       ],
       "md": [
@@ -807,5 +819,5 @@ const patternManifest_1523279809630 = {
   }
 };
 
-patternBotIncludes(patternManifest_1523279809630);
+patternBotIncludes(patternManifest_1523279940044);
 }());
