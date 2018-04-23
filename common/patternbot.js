@@ -444,9 +444,9 @@ const patternBotIncludes = function (manifest) {
 /** 
  * Patternbot library manifest
  * /Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library
- * @version b3799dc61a1ada395b4b45a0ab436ae6ddeedaff
+ * @version 181c8123f9328c536b539f7e85542ca8439f5cb8
  */
-const patternManifest_b3799dc61a1ada395b4b45a0ab436ae6ddeedaff = {
+const patternManifest_181c8123f9328c536b539f7e85542ca8439f5cb8 = {
   "commonInfo": {
     "modulifier": [
       "responsive",
@@ -728,6 +728,13 @@ const patternManifest_b3799dc61a1ada395b4b45a0ab436ae6ddeedaff = {
           "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/cards/icon-card.html",
           "localPath": "patterns/cards/icon-card.html",
           "readme": {}
+        },
+        {
+          "name": "image-card",
+          "namePretty": "Image card",
+          "filename": "image-card",
+          "path": "/Users/avc/Desktop/School/GD Semester 4/Web Dev 4/ecommerce-pattern-library/patterns/cards/image-card.html",
+          "localPath": "patterns/cards/image-card.html"
         }
       ],
       "md": [
@@ -903,5 +910,5 @@ const patternManifest_b3799dc61a1ada395b4b45a0ab436ae6ddeedaff = {
   }
 };
 
-patternBotIncludes(patternManifest_b3799dc61a1ada395b4b45a0ab436ae6ddeedaff);
+patternBotIncludes(patternManifest_181c8123f9328c536b539f7e85542ca8439f5cb8);
 }());
